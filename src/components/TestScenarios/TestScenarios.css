@@ -1,0 +1,184 @@
+.test-scenarios h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter:hover,
+.filter.active {
+  background: #667eea;
+  color: white;
+}
+
+.scenarios-list {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scenario-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-left: 4px solid #667eea;
+}
+
+.scenario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.scenario-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.scenario-type {
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.scenario-type.functional {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.scenario-type.api {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.scenario-type.performance {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.scenario-type.security {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.scenario-description p {
+  margin: 0.5rem 0;
+}
+
+.test-steps {
+  margin: 1.5rem 0;
+}
+
+.test-steps table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.test-steps th,
+.test-steps td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.test-steps th {
+  background: #f8f9fa;
+  font-weight: bold;
+}
+
+.step-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.step-status.passed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.step-status.failed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.step-status.not-executed {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.scenario-footer {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.scenario-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.automation-code {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.automation-code pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+.automation-code code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .test-steps table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .scenario-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
