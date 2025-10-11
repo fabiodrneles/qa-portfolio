@@ -10,7 +10,7 @@ const Home = () => {
           <div className="hero-content">
             <h1>Quality Assurance Specialist</h1>
             <p className="hero-subtitle">
-              Especialista em Garantia de Qualidade com 6+ anos de experiência 
+              Especialista em Garantia de Qualidade com 8+ anos de experiência 
               em testes automatizados, performance e segurança
             </p>
             <div className="hero-stats">
