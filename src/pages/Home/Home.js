@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import Footer from "../../components/footer/Footer.jsx";
 
 const Home = () => {
   return (
@@ -58,7 +59,10 @@ const Home = () => {
                 <li>Cucumber BDD</li>
               </ul>
             </div>
-            <div className="skill-category">
+
+            {/**
+             * 
+             *             <div className="skill-category">
               <h3>CI/CD & DevOps</h3>
               <ul>
                 <li>Jenkins</li>
@@ -68,6 +72,8 @@ const Home = () => {
                 <li>Azure DevOps</li>
               </ul>
             </div>
+             */}
+
             <div className="skill-category">
               <h3>Testes Especializados</h3>
               <ul>
@@ -80,6 +86,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </section>
     </div>
   );
