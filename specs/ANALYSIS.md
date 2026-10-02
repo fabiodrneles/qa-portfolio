@@ -13,6 +13,7 @@ Portfólio em React 18 (Create React App) com três páginas (Home, Portfolio, A
 | `npm ci` | Falha: o lockfile fixa `react@19.2.0` e o `package.json` pede `^18.2.0` |
 | `npm install && CI=true npx react-scripts build` | Passa (62 kB de JS) |
 | `npm test` | Nenhum teste |
+| `git tag` | `v0.1.0` já existe (commit inicial, 2025); as fases começam em `v0.2.0` |
 
 ## 3. Observações por severidade
 

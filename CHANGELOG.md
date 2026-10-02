@@ -4,7 +4,7 @@ Formato: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/); versões e
 
 ## [Unreleased]
 
-## [0.1.0] - 2026-10-02
+## [0.2.0] - 2026-10-02
 
 ### Adicionado
 
