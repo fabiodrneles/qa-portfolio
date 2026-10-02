@@ -1,8 +1,11 @@
+import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
+
+const { profile } = JSON.parse(readFileSync('src/data/portfolio.json', 'utf8'));
 
 test('002 AC-2: the menu walks Home → Portfolio → About', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1, name: 'Quality Assurance Specialist' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: profile.headline })).toBeVisible();
 
   const nav = page.locator('header nav');
   await nav.getByRole('link', { name: 'Portfólio' }).click();

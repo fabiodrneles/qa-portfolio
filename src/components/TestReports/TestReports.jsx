@@ -1,4 +1,4 @@
-import { testReports } from '../../data/testData';
+import { reports as testReports } from '../../data/portfolio';
 import './TestReports.css';
 
 const TestReports = () => {
