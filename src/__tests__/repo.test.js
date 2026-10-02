@@ -23,6 +23,11 @@ describe('build and deploy config', () => {
     expect(cfg.rewrites).toContainEqual({ source: '/(.*)', destination: '/index.html' });
   });
 
+  test('001 AC-1: Vercel builds with Vite into dist/', () => {
+    const cfg = JSON.parse(readFileSync('vercel.json', 'utf8'));
+    expect(cfg).toMatchObject({ framework: 'vite', outputDirectory: 'dist' });
+  });
+
   test('001 AC-1: the build uses Vite and react-scripts is gone', () => {
     const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
     expect(pkg.scripts.build).toBe('vite build');
