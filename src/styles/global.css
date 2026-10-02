@@ -52,7 +52,7 @@ p {
 }
 
 a {
-  color: #667eea;
+  color: #4f5bd5;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f5bd5 0%, #764ba2 100%);
   color: white;
 }
 
@@ -106,11 +106,11 @@ a:hover {
 
 .btn-secondary:hover {
   background: #e9ecef;
-  border-color: #667eea;
+  border-color: #4f5bd5;
 }
 
 .btn-success {
-  background: #28a745;
+  background: #1e7e34;
   color: white;
 }
 
@@ -211,7 +211,7 @@ a:hover {
 
 .form-control:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #4f5bd5;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
@@ -256,12 +256,12 @@ a:hover {
 }
 
 .badge-primary {
-  background-color: #667eea;
+  background-color: #4f5bd5;
   color: white;
 }
 
 .badge-success {
-  background-color: #28a745;
+  background-color: #1e7e34;
   color: white;
 }
 
@@ -291,7 +291,7 @@ a:hover {
 
 .progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: linear-gradient(90deg, #4f5bd5, #764ba2);
   border-radius: 4px;
   transition: width 0.6s ease;
 }
@@ -310,11 +310,11 @@ a:hover {
 }
 
 .text-primary {
-  color: #667eea;
+  color: #4f5bd5;
 }
 
 .text-success {
-  color: #28a745;
+  color: #1e7e34;
 }
 
 .text-warning {
@@ -446,7 +446,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #4f5bd5, #764ba2);
   border-radius: 4px;
 }
 
@@ -467,7 +467,7 @@ a:hover {
 
 /* ===== FOCUS VISIBLE ===== */
 :focus-visible {
-  outline: 2px solid #667eea;
+  outline: 2px solid #4f5bd5;
   outline-offset: 2px;
 }
 
@@ -477,7 +477,7 @@ a:hover {
   width: 20px;
   height: 20px;
   border: 3px solid #f3f3f3;
-  border-top: 3px solid #667eea;
+  border-top: 3px solid #4f5bd5;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }

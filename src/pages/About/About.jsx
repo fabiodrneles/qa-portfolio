@@ -1,4 +1,3 @@
-import React from 'react';
 import { qaTools, qualityMetrics } from '../../data/testData';
 import './About.css';
 

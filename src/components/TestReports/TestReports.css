@@ -16,7 +16,7 @@
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #4f5bd5;
 }
 
 .report-header {
@@ -71,7 +71,7 @@
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #667eea;
+  color: #4f5bd5;
 }
 
 .metric-label {
@@ -92,7 +92,7 @@
 }
 
 .tool-tag {
-  background: #667eea;
+  background: #4f5bd5;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
@@ -135,7 +135,7 @@
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: linear-gradient(90deg, #4f5bd5, #764ba2);
   transition: width 0.3s ease;
 }
 

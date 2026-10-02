@@ -25,3 +25,25 @@ jobs:
           cache: npm
       - run: make deps
       - run: make ci
+
+  e2e:
+    name: E2E e acessibilidade
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+          cache: npm
+      - run: make deps
+      - run: npx playwright install --with-deps chromium
+      - run: make e2e
+        env:
+          CI: true
+      - uses: actions/upload-artifact@v7
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14
+
