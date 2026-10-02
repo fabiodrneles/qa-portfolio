@@ -12,12 +12,12 @@ O estado do trabalho vive no GitHub, e não na conversa. Abra o ticket e o PR as
 
 ## O projeto
 
-Portfólio de QA em React 18 com Vite, publicado na Vercel. O conteúdo vem de um arquivo de dados (spec 003); quem fizer fork troca só esse arquivo.
+Modelo (template) de portfólio para QA em React 18 com Vite, publicado na Vercel. Todo o conteúdo vem de `src/data/portfolio.json`, com dados **fictícios** de demonstração (D1, spec 003); quem usa o modelo troca só esse arquivo.
 
 | Caminho | O que tem |
 |---|---|
 | `src/pages/` | Home, Portfolio e About (rotas do `react-router-dom`) |
-| `src/components/` | Header, Footer, TestReports, TestScenarios, Metrics |
+| `src/components/` | Header, Footer, DemoNotice, TestReports, TestScenarios, Metrics |
 | `src/data/` | `portfolio.json` (todo o conteúdo do site) e `validate.js` (validação com o caminho do campo) |
 | `specs/` | Constituição, specs `NNN-nome/spec.md`, `ROADMAP.md`, `ANALYSIS.md` |
 
