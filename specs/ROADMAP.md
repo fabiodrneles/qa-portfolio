@@ -8,10 +8,10 @@ Cada tarefa referencia a spec e os critérios de aceite que ela fecha. Ordem sug
 
 ## Fase 1 — Base testada (P0) → `v0.1.0` · épico #1
 
-- [ ] **T1** Adoção do sdd-kit, `npm ci` reproduzível e limpeza — 001 FR-1, FR-4, AC-3 — #2
-- [ ] **T2** Migração para Vite e `vercel.json` — 001 FR-2, FR-3, AC-1, AC-2 — #3
-- [ ] **T3** Testes unitários com cobertura mínima — 002 FR-1, AC-1 — #4
-- [ ] **T4** E2E com Playwright e acessibilidade com axe no CI — 002 FR-2 a FR-4, AC-2 a AC-4 — #5
+- [x] **T1** Adoção do sdd-kit, `npm ci` reproduzível e limpeza — 001 FR-1, FR-4, AC-3 — #2
+- [x] **T2** Migração para Vite e `vercel.json` — 001 FR-2, FR-3, AC-1, AC-2 — #3
+- [x] **T3** Testes unitários com cobertura mínima — 002 FR-1, AC-1 — #4
+- [x] **T4** E2E com Playwright e acessibilidade com axe no CI — 002 FR-2 a FR-4, AC-2 a AC-4 — #5
 
 ## Fase 2 — Conteúdo real (P1) → `v0.2.0`
 
