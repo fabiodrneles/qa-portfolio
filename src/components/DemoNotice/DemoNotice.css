@@ -1,0 +1,12 @@
+.demo-notice {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background: #fff4cc;
+  color: #4d3800;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.demo-notice code {
+  font-size: 0.85rem;
+}

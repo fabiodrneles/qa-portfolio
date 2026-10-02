@@ -3,10 +3,13 @@ import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Portfolio from './pages/Portfolio/Portfolio';
 import About from './pages/About/About';
+import DemoNotice from './components/DemoNotice/DemoNotice';
+import { site } from './data/portfolio';
 
 function App() {
   return (
     <div className="App">
+      <DemoNotice show={site.demo === true} />
       <Header />
       <main>
         <Routes>

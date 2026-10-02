@@ -33,4 +33,33 @@ describe('portfolio.json', () => {
     data.profile.role = '  ';
     expect(validatePortfolio(data)).toEqual(['profile.role: texto não vazio esperado']);
   });
+
+  test('003 AC-2: the distributed data fills every section and is marked as demo', () => {
+    const data = load();
+    expect(data.site.demo).toBe(true);
+    const empty = [];
+    const walk = (value, path) => {
+      // Sections and their lists must have content; lists inside an item may be empty
+      // (e.g. a planned project with no defects yet).
+      if (Array.isArray(value)) {
+        if (value.length === 0) empty.push(path);
+      } else if (value && typeof value === 'object') {
+        Object.entries(value).forEach(([k, v]) => walk(v, path ? `${path}.${k}` : k));
+      }
+    };
+    walk(data, '');
+    expect(empty).toEqual([]);
+  });
+
+  test('003 AC-2: demo contacts never point to a real profile', () => {
+    for (const contact of load().contacts) {
+      expect(new URL(contact.url).hostname).toBe('example.com');
+    }
+  });
+
+  test('003 AC-1: site.demo must be a boolean', () => {
+    const data = load();
+    data.site.demo = 'sim';
+    expect(validatePortfolio(data)).toEqual(['site.demo: true ou false esperado']);
+  });
 });

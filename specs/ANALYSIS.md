@@ -57,7 +57,7 @@ Mostra o resultado, mas não diz como rodar, testar, publicar nem como adaptar p
 
 Respondidas pelo dono em 2026-10-02, todas conforme recomendado:
 
-- [x] **D1** Propósito → **dados**: todo o conteúdo vem de um arquivo validado; a instância do dono mostra os projetos reais e quem fizer fork troca só o arquivo.
+- [x] **D1** Propósito → **template**: todo o conteúdo vem de um arquivo validado, com dados **fictícios** que demonstram cada seção; quem usa o modelo troca só o arquivo. *(Revista pelo dono em 2026-10-02: a primeira versão previa os projetos reais do dono.)*
 - [x] **D2** Build → **Vite** com Vitest, mantendo JavaScript e React 18.
 - [x] **D3** Testes → **unitários + E2E + acessibilidade** (Vitest com Testing Library, Playwright, axe), no CI com cobertura mínima.
 - [x] **D4** Deploy → **Vercel**, com `vercel.json` para as rotas diretas.

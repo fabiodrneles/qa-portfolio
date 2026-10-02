@@ -2,6 +2,7 @@
 
 const str = { type: 'string' };
 const num = { type: 'number' };
+const bool = { type: 'boolean' };
 const url = { type: 'url' };
 const list = (of) => ({ type: 'array', of });
 const obj = (fields) => ({ type: 'object', fields });
@@ -11,7 +12,7 @@ const optional = (rule) => ({ ...rule, optional: true });
 const stat = obj({ value: str, label: str });
 
 export const schema = obj({
-  site: obj({ title: str, description: str }),
+  site: obj({ title: str, description: str, demo: optional(bool) }),
   profile: obj({
     name: str,
     role: str,
@@ -66,6 +67,9 @@ const check = (rule, value, path, errors) => {
       break;
     case 'number':
       if (typeof value !== 'number' || Number.isNaN(value)) errors.push(`${path}: número esperado`);
+      break;
+    case 'boolean':
+      if (typeof value !== 'boolean') errors.push(`${path}: true ou false esperado`);
       break;
     case 'url':
       if (typeof value !== 'string' || !/^https:\/\/[^\s/]+\.[^\s]+$/.test(value)) {

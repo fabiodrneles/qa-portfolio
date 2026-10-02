@@ -16,5 +16,5 @@ Cada tarefa referencia a spec e os critérios de aceite que ela fecha. Ordem sug
 ## Fase 2 — Conteúdo real (P1) → `v0.3.0`
 
 - [ ] **T5** `portfolio.json` único e validado — 003 FR-1, FR-2, AC-1, AC-3
-- [ ] **T6** Projetos reais do dono com links e números citados — 003 FR-3, AC-2
+- [ ] **T6** Dados fictícios de demonstração e aviso de exemplo — 003 FR-3, AC-2
 - [ ] **T7** README: rodar, testar, publicar e adaptar — 003 FR-4

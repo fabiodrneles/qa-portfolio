@@ -10,4 +10,10 @@ describe('TestReports', () => {
       expect(screen.getByText(report.projectName)).toBeInTheDocument();
     }
   });
+
+  test('002 AC-1: a report without defects says so', () => {
+    render(<TestReports />);
+    const withoutDefects = testReports.filter((r) => r.defects.length === 0);
+    expect(screen.queryAllByText('Nenhum defeito registrado.')).toHaveLength(withoutDefects.length);
+  });
 });
