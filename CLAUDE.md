@@ -18,7 +18,7 @@ Portfólio de QA em React 18 com Vite, publicado na Vercel. O conteúdo vem de u
 |---|---|
 | `src/pages/` | Home, Portfolio e About (rotas do `react-router-dom`) |
 | `src/components/` | Header, Footer, TestReports, TestScenarios, Metrics |
-| `src/data/` | Conteúdo do site |
+| `src/data/` | `portfolio.json` (todo o conteúdo do site) e `validate.js` (validação com o caminho do campo) |
 | `specs/` | Constituição, specs `NNN-nome/spec.md`, `ROADMAP.md`, `ANALYSIS.md` |
 
 ## Comandos

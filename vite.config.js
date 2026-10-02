@@ -1,8 +1,21 @@
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// 003 FR-1: the page title and description also come from portfolio.json.
+const siteMeta = () => ({
+  name: 'site-meta',
+  transformIndexHtml(html) {
+    const { site } = JSON.parse(readFileSync('src/data/portfolio.json', 'utf8'));
+    const escape = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    return html
+      .replace(/<title>.*<\/title>/, `<title>${escape(site.title)}</title>`)
+      .replace(/(<meta\s+name="description"\s+content=")[^"]*"/, `$1${escape(site.description)}"`);
+  },
+});
+
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), siteMeta()],
   test: {
     include: ['src/**/*.test.{js,jsx}'],
     environment: 'jsdom',

@@ -1,4 +1,4 @@
-import { qualityMetrics } from '../../data/testData';
+import { metrics as qualityMetrics } from '../../data/portfolio';
 import './Metrics.css';
 
 const Metrics = () => {

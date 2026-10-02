@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, test } from 'vitest';
-import { testScenarios } from '../../data/testData';
+import { scenarios as testScenarios } from '../../data/portfolio';
 import TestScenarios from './TestScenarios';
 
 const titles = () => screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent);

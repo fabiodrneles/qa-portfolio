@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, test } from 'vitest';
-import { testReports } from '../../data/testData';
+import { reports as testReports } from '../../data/portfolio';
 import TestReports from './TestReports';
 
 describe('TestReports', () => {

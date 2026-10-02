@@ -1,114 +1,8 @@
-import { qaTools, qualityMetrics } from '../../data/testData';
+import { about, metrics as qualityMetrics, profile, tools as qaTools } from '../../data/portfolio';
 import './About.css';
 
 const About = () => {
-  const experience = [
-    {
-      period: "2022 - Presente",
-      company: "TechCorp Solutions",
-      position: "Senior QA Engineer",
-      achievements: [
-        "Liderança técnica da equipe de automação com 5 QAs",
-        "Implementação de framework de testes E2E com 85% de cobertura",
-        "Redução de 60% no tempo de release através de CI/CD",
-        "Mentoria de 3 QAs juniores para senioridade"
-      ]
-    },
-    {
-      period: "2020 - 2022",
-      company: "Digital Innovation Ltda",
-      position: "QA Engineer Pleno",
-      achievements: [
-        "Desenvolvimento de suite de testes de API com RestAssured",
-        "Implementação de testes de performance com JMeter",
-        "Integração de testes na pipeline DevOps",
-        "Criação de estratégia de testes para microservices"
-      ]
-    },
-    {
-      period: "2018 - 2020",
-      company: "StartUp Agile",
-      position: "QA Analyst",
-      achievements: [
-        "Criação de processos de QA do zero",
-        "Implementação de testes manuais e automação inicial",
-        "Colaboração com desenvolvimento em metodologia Agile",
-        "Definição de métricas e KPIs de qualidade"
-      ]
-    },
-    {
-      period: "2016 - 2018",
-      company: "SoftTech Systems",
-      position: "QA Analyst Júnior",
-      achievements: [
-        "Execução de testes manuais em aplicações web",
-        "Documentação de casos de teste",
-        "Suporte em testes de regressão",
-        "Aprendizado de ferramentas de automação"
-      ]
-    }
-  ];
-
-  const certifications = [
-    {
-      name: "ISTQB Advanced Test Analyst",
-      issuer: "ISTQB",
-      year: "2022",
-      badge: "🏅"
-    },
-    {
-      name: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      year: "2021",
-      badge: "☁️"
-    },
-    {
-      name: "Selenium WebDriver Advanced",
-      issuer: "Udemy",
-      year: "2020",
-      badge: "🚀"
-    },
-    {
-      name: "Agile Testing Foundations",
-      issuer: "Coursera",
-      year: "2019",
-      badge: "🔄"
-    },
-    {
-      name: "Performance Testing with JMeter",
-      issuer: "Pluralsight",
-      year: "2020",
-      badge: "⚡"
-    }
-  ];
-
-  const methodologies = [
-    {
-      name: "Agile/Scrum",
-      description: "Experiência em squads ágeis com sprints de 2 semanas",
-      proficiency: 95
-    },
-    {
-      name: "BDD (Behavior Driven Development)",
-      description: "Implementação de Cucumber/Gherkin para colaboração",
-      proficiency: 90
-    },
-    {
-      name: "CI/CD",
-      description: "Integração contínua com Jenkins, GitLab CI e Azure DevOps",
-      proficiency: 88
-    },
-    {
-      name: "Shift-Left Testing",
-      description: "Testes desde as fases iniciais do desenvolvimento",
-      proficiency: 92
-    },
-    {
-      name: "Test Pyramid",
-      description: "Estratégia balanceada entre unit, integration e E2E tests",
-      proficiency: 85
-    }
-  ];
+  const { experience, certifications, methodologies } = about;
 
   return (
     <div className="about">
@@ -117,51 +11,39 @@ const About = () => {
         <section className="about-hero">
           <div className="hero-content">
             <h1>Sobre Mim</h1>
-            <p className="hero-subtitle">
-              QA Engineer Sênior com 8+ anos de experiência em garantia de qualidade, 
-              especializado em automação de testes, estratégias de qualidade e liderança técnica.
-            </p>
+            <p className="hero-subtitle">{about.summary}</p>
             <div className="hero-stats">
-              <div className="hero-stat">
-                <span className="stat-number">8+</span>
-                <span className="stat-label">Anos de Experiência</span>
-              </div>
-              <div className="hero-stat">
-                <span className="stat-number">50+</span>
-                <span className="stat-label">Projetos Entregues</span>
-              </div>
-              <div className="hero-stat">
-                <span className="stat-number">15k+</span>
-                <span className="stat-label">Casos de Teste</span>
-              </div>
-              <div className="hero-stat">
-                <span className="stat-number">98%</span>
-                <span className="stat-label">Satisfação do Cliente</span>
-              </div>
+              {about.stats.map((stat) => (
+                <div key={stat.label} className="hero-stat">
+                  <span className="stat-number">{stat.value}</span>
+                  <span className="stat-label">{stat.label}</span>
+                </div>
+              ))}
             </div>
           </div>
+
           <div className="hero-image">
             <div className="profile-card">
               <div className="profile-header">
-                <h3>Fabio Silva</h3>
-                <p>Senior QA Engineer</p>
+                <h3>{profile.name}</h3>
+                <p>{profile.role}</p>
               </div>
               <div className="profile-details">
                 <div className="detail-item">
                   <span className="label">Localização:</span>
-                  <span className="value">São Paulo, SP</span>
+                  <span className="value">{profile.location}</span>
                 </div>
                 <div className="detail-item">
                   <span className="label">Disponibilidade:</span>
-                  <span className="value available">Disponível</span>
+                  <span className="value available">{profile.availability}</span>
                 </div>
                 <div className="detail-item">
                   <span className="label">Experiência:</span>
-                  <span className="value">8 anos</span>
+                  <span className="value">{profile.experience}</span>
                 </div>
                 <div className="detail-item">
                   <span className="label">Especialização:</span>
-                  <span className="value">Test Automation</span>
+                  <span className="value">{profile.specialization}</span>
                 </div>
               </div>
             </div>
@@ -172,38 +54,13 @@ const About = () => {
         <section className="philosophy-section">
           <h2>Minha Filosofia de Qualidade</h2>
           <div className="philosophy-grid">
-            <div className="philosophy-card">
-              <div className="philosophy-icon">🎯</div>
-              <h3>Qualidade desde o Início</h3>
-              <p>
-                Acredito na abordagem Shift-Left, onde a qualidade é incorporada 
-                desde as fases iniciais do desenvolvimento, não apenas no final.
-              </p>
-            </div>
-            <div className="philosophy-card">
-              <div className="philosophy-icon">🤝</div>
-              <h3>Colaboração Estratégica</h3>
-              <p>
-                Trabalho em estreita colaboração com desenvolvedores, POs e stakeholders 
-                para alinhar expectativas e garantir qualidade end-to-end.
-              </p>
-            </div>
-            <div className="philosophy-card">
-              <div className="philosophy-icon">📊</div>
-              <h3>Data-Driven Decisions</h3>
-              <p>
-                Uso métricas e dados para tomar decisões sobre qualidade, priorização 
-                de testes e melhoria contínua dos processos.
-              </p>
-            </div>
-            <div className="philosophy-card">
-              <div className="philosophy-icon">🚀</div>
-              <h3>Automação Inteligente</h3>
-              <p>
-                Foco em automação estratégica que entrega valor real, não apenas 
-                em cobrir números, mas em melhorar eficiência e confiabilidade.
-              </p>
-            </div>
+            {about.philosophy.map((item) => (
+              <div key={item.title} className="philosophy-card">
+                <div className="philosophy-icon">{item.icon}</div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
           </div>
         </section>
 

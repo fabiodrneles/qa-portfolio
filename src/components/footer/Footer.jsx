@@ -1,60 +1,44 @@
-import "./footer.css";
-
+import { Link } from 'react-router-dom';
+import { contacts, profile, site } from '../../data/portfolio';
+import './footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container container">
-        <h1 className="footer__title">QA Portfolio</h1>
+        <h1 className="footer__title">{site.title}</h1>
 
         <ul className="footer__list">
           <li>
-            <a href="/about" className="footer__link">
-              About
-            </a>
+            <Link to="/about" className="footer__link">
+              Sobre
+            </Link>
           </li>
 
           <li>
-            <a href="/portfolio" className="footer__link">
+            <Link to="/portfolio" className="footer__link">
               Portfólio
-            </a>
+            </Link>
           </li>
         </ul>
 
         <div className="footer__social">
-          <a
-            href="https://instagram.com"
-            aria-label="Instagram"
-            className="footer__social-link"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="bx bxl-instagram"></i>
-          </a>
-
-          <a
-            href="https://www.linkedin.com"
-            aria-label="LinkedIn"
-            className="footer__social-link"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="bx bxl-linkedin"></i>
-          </a>
-
-          <a
-            href="https://github.com"
-            aria-label="GitHub"
-            className="footer__social-link"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="bx bxl-github"></i>
-          </a>
+          {contacts.map((contact) => (
+            <a
+              key={contact.url}
+              href={contact.url}
+              aria-label={contact.label}
+              className="footer__social-link"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className={`bx ${contact.icon}`}></i>
+            </a>
+          ))}
         </div>
 
         <span className="footer__copy">
-          &#169; Fabio Dorneles. <strong>Made in React.JS</strong> - All rigths reserved
+          &#169; {profile.name}. <strong>Feito em React</strong>
         </span>
       </div>
     </footer>

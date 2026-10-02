@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { testScenarios } from '../../data/testData';
+import { scenarios as testScenarios } from '../../data/portfolio';
 import './TestScenarios.css';
 
 const TestScenarios = () => {

@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { profile, site } from '../../data/portfolio';
 import './Header.css';
 
 const Header = () => {
@@ -8,8 +9,8 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h1>QA Portfolio</h1>
-          <span>Senior Quality Assurance Engineer</span>
+          <h1>{site.title}</h1>
+          <span>{profile.role}</span>
         </div>
         <nav className="nav">
           <Link 

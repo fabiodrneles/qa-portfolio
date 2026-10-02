@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, test } from 'vitest';
 import App from './App';
+import { profile } from './data/portfolio';
 
 const renderAt = (path) =>
   render(
@@ -13,7 +14,7 @@ const renderAt = (path) =>
 
 describe('App routes', () => {
   test.each([
-    ['/', 'Quality Assurance Specialist'],
+    ['/', profile.headline],
     ['/portfolio', 'Portfólio de Projetos'],
     ['/about', 'Sobre Mim'],
   ])('002 AC-1: %s renders its page title', (path, title) => {
