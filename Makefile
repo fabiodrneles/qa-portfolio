@@ -8,6 +8,10 @@ ci: ## Tudo o que o CI verifica
 	CI=true npm test
 	npm run build --if-present
 
+.PHONY: e2e
+e2e: ## E2E e acessibilidade (Playwright + axe) sobre o build de produção
+	npm run e2e
+
 .PHONY: deps
 deps: ## Instala as dependências exatamente como no lockfile
 	npm ci

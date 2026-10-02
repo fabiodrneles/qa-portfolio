@@ -44,7 +44,7 @@
   display: block;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #667eea;
+  color: #4f5bd5;
   margin-bottom: 0.5rem;
 }
 
@@ -70,7 +70,7 @@
   margin-top: 0;
   color: #333;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #667eea;
+  border-bottom: 2px solid #4f5bd5;
   padding-bottom: 0.5rem;
 }
 
@@ -84,7 +84,7 @@
   background: #f8f9fa;
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #4f5bd5;
 }
 
 .metric-card h4 {
@@ -108,7 +108,7 @@
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #667eea;
+  color: #4f5bd5;
 }
 
 .stat-label {
@@ -201,7 +201,7 @@
 }
 
 .bar.low {
-  background: #28a745;
+  background: #1e7e34;
 }
 
 .month-label {
@@ -243,7 +243,7 @@
 }
 
 .legend-color.low {
-  background: #28a745;
+  background: #1e7e34;
 }
 
 .root-cause-analysis {
@@ -255,7 +255,7 @@
   background: #f8f9fa;
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #4f5bd5;
 }
 
 .cause-header {
@@ -273,7 +273,7 @@
 .cause-percentage {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #667eea;
+  color: #4f5bd5;
 }
 
 .cause-bar {
@@ -286,7 +286,7 @@
 
 .cause-progress {
   height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: linear-gradient(90deg, #4f5bd5, #764ba2);
   border-radius: 4px;
   transition: width 0.3s ease;
 }

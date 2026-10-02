@@ -1,4 +1,3 @@
-import React from "react";
 import "./footer.css";
 
 
@@ -25,6 +24,7 @@ const Footer = () => {
         <div className="footer__social">
           <a
             href="https://instagram.com"
+            aria-label="Instagram"
             className="footer__social-link"
             rel="noreferrer"
             target="_blank"
@@ -34,6 +34,7 @@ const Footer = () => {
 
           <a
             href="https://www.linkedin.com"
+            aria-label="LinkedIn"
             className="footer__social-link"
             rel="noreferrer"
             target="_blank"
@@ -43,6 +44,7 @@ const Footer = () => {
 
           <a
             href="https://github.com"
+            aria-label="GitHub"
             className="footer__social-link"
             rel="noreferrer"
             target="_blank"

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import TestReports from '../../components/TestReports/TestReports';
 import TestScenarios from '../../components/TestScenarios/TestScenarios';
 import Metrics from '../../components/Metrics/Metrics';

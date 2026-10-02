@@ -1,4 +1,3 @@
-import React from 'react';
 import { qualityMetrics } from '../../data/testData';
 import './Metrics.css';
 

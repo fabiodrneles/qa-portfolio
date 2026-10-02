@@ -24,7 +24,7 @@
   font-size: 3rem;
   color: #2c3e50;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4f5bd5 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -61,7 +61,7 @@
   display: block;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #667eea;
+  color: #4f5bd5;
   margin-bottom: 0.5rem;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .profile-header p {
-  color: #667eea;
+  color: #4f5bd5;
   font-weight: 500;
   margin: 0;
 }
@@ -125,7 +125,7 @@
 }
 
 .value.available {
-  color: #28a745;
+  color: #1e7e34;
   font-weight: 600;
 }
 
@@ -154,7 +154,7 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s ease;
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #4f5bd5;
 }
 
 .philosophy-card:hover {
@@ -203,7 +203,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #667eea;
+  background: #4f5bd5;
 }
 
 .timeline-item {
@@ -219,9 +219,9 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #667eea;
+  background: #4f5bd5;
   border: 4px solid white;
-  box-shadow: 0 0 0 3px #667eea;
+  box-shadow: 0 0 0 3px #4f5bd5;
 }
 
 .timeline-content {
@@ -245,7 +245,7 @@
 }
 
 .timeline-period {
-  background: #667eea;
+  background: #4f5bd5;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
@@ -254,7 +254,7 @@
 }
 
 .timeline-company {
-  color: #667eea;
+  color: #4f5bd5;
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1.1rem;
@@ -278,7 +278,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #28a745;
+  color: #1e7e34;
   font-weight: bold;
 }
 
@@ -333,7 +333,7 @@
 }
 
 .cert-year {
-  color: #667eea;
+  color: #4f5bd5;
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -377,7 +377,7 @@
 }
 
 .proficiency {
-  color: #667eea;
+  color: #4f5bd5;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -397,7 +397,7 @@
 
 .proficiency-fill {
   height: 100%;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  background: linear-gradient(90deg, #4f5bd5, #764ba2);
   border-radius: 4px;
   transition: width 1s ease;
 }
@@ -431,7 +431,7 @@
   color: #2c3e50;
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  border-bottom: 2px solid #667eea;
+  border-bottom: 2px solid #4f5bd5;
   padding-bottom: 0.5rem;
 }
 
@@ -467,7 +467,7 @@
 }
 
 .tool-proficiency {
-  color: #667eea;
+  color: #4f5bd5;
   font-weight: 600;
 }
 
@@ -509,7 +509,7 @@
 .career-metric .metric-value {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #667eea;
+  color: #4f5bd5;
   margin-bottom: 0.5rem;
 }
 

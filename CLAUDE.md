@@ -24,7 +24,8 @@ Portfólio de QA em React 18 com Vite, publicado na Vercel. O conteúdo vem de u
 ## Comandos
 
 ```text
-make ci     # a mesma verificação do CI (rode antes de todo push)
+make ci     # lint + testes unitários com cobertura ≥ 80% + build (rode antes de todo push)
+make e2e    # Playwright + axe sobre o build de produção (job separado no CI)
 make docs   # markdownlint (os links são verificados no CI)
 make sdd-check  # cada AC de spec In Progress/Done citado num teste ("NNN AC-n")
 ```
@@ -44,6 +45,8 @@ Numa sessão na web, o hook `.claude/hooks/session-start.sh` instala as dependê
 
 - **`npm ci` exige o lockfile em sincronia com o `package.json`.** Mudou dependência? Rode `npm install` e versione o `package-lock.json`.
 - **O npm 10 quebra (`Cannot read properties of null (reading 'edgesOut')`) ao resolver as dependências do Vitest.** Gere o lockfile com `npx npm@11 install`; o `npm ci` do npm 10 funciona com ele.
+- **Chromium já instalado (sessão na web):** `PW_CHROMIUM_PATH=/opt/pw-browsers/chromium make e2e` evita o `playwright install`.
+- **Acessibilidade:** o axe reprova contraste abaixo de 4,5:1; teste a cor nova contra o fundo antes de trocar.
 - **Rotas diretas na Vercel** dependem do `vercel.json` (reescrita para `index.html`).
 
 ## Economia de uso

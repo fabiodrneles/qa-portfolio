@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { testScenarios } from '../../data/testData';
 import './TestScenarios.css';
 
