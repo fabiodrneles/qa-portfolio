@@ -1,7 +1,7 @@
 # 001 — Base reproduzível com Vite
 
 - **Prioridade:** P0
-- **Status:** Approved — D2 e D4 respondidas em 2026-10-02
+- **Status:** Done — entregue na `v0.1.0`
 - **Código afetado:** `package.json`, `package-lock.json`, `index.html`, `vite.config.js`, `vercel.json`, `src/`
 
 ## Contexto

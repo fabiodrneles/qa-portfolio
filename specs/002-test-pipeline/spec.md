@@ -1,7 +1,7 @@
 # 002 — Testes e esteira de qualidade
 
 - **Prioridade:** P0
-- **Status:** Approved — D3 respondida em 2026-10-02
+- **Status:** Done — entregue na `v0.1.0`
 - **Código afetado:** `src/**/*.test.jsx`, `e2e/`, `vite.config.js`, `playwright.config.js`, `.github/workflows/ci.yml`
 
 ## Contexto

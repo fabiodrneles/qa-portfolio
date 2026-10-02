@@ -34,3 +34,16 @@ describe('build and deploy config', () => {
     expect({ ...pkg.dependencies, ...pkg.devDependencies }).not.toHaveProperty('react-scripts');
   });
 });
+
+describe('CI pipeline', () => {
+  test('002 AC-4: CI runs make ci and the E2E job, keeping the report on failure', () => {
+    const ci = readFileSync('.github/workflows/ci.yml', 'utf8');
+    expect(ci).toMatch(/run: make ci/);
+    expect(ci).toMatch(/run: make e2e/);
+    expect(ci).toMatch(/if: failure\(\)[\s\S]*path: playwright-report\//);
+    const makefile = readFileSync('Makefile', 'utf8');
+    expect(makefile).toMatch(/npm run lint/);
+    expect(makefile).toMatch(/npm test/);
+    expect(makefile).toMatch(/npm run build/);
+  });
+});
