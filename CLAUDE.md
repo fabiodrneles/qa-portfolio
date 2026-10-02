@@ -12,7 +12,7 @@ O estado do trabalho vive no GitHub, e não na conversa. Abra o ticket e o PR as
 
 ## O projeto
 
-Portfólio de QA em React 18, publicado na Vercel. O conteúdo vem de um arquivo de dados (spec 003); quem fizer fork troca só esse arquivo.
+Portfólio de QA em React 18 com Vite, publicado na Vercel. O conteúdo vem de um arquivo de dados (spec 003); quem fizer fork troca só esse arquivo.
 
 | Caminho | O que tem |
 |---|---|
@@ -43,6 +43,7 @@ Numa sessão na web, o hook `.claude/hooks/session-start.sh` instala as dependê
 ## Armadilhas já conhecidas
 
 - **`npm ci` exige o lockfile em sincronia com o `package.json`.** Mudou dependência? Rode `npm install` e versione o `package-lock.json`.
+- **O npm 10 quebra (`Cannot read properties of null (reading 'edgesOut')`) ao resolver as dependências do Vitest.** Gere o lockfile com `npx npm@11 install`; o `npm ci` do npm 10 funciona com ele.
 - **Rotas diretas na Vercel** dependem do `vercel.json` (reescrita para `index.html`).
 
 ## Economia de uso
