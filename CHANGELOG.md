@@ -4,6 +4,18 @@ Formato: [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/); versões e
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-02
+
+### Adicionado
+
+- Todo o conteúdo do site vem de `src/data/portfolio.json`, validado com o caminho de cada erro (#21).
+- Aviso de dados de demonstração (`site.demo`) e pessoa fictícia com contatos em `example.com`: o projeto é um modelo (#22).
+- README do modelo, com capturas de tela em `docs/img/` (#23).
+
+### Mudado
+
+- Relatório sem defeitos mostra "Nenhum defeito registrado." (#22).
+
 ## [0.2.0] - 2026-10-02
 
 ### Adicionado
