@@ -49,13 +49,17 @@ const TestReports = () => {
               </div>
 
               <h4>Principais Defeitos Encontrados:</h4>
-              <ul className="defects-list">
-                {report.defects.map((defect, idx) => (
-                  <li key={idx}>
-                    <strong>{defect.severity}:</strong> {defect.description}
-                  </li>
-                ))}
-              </ul>
+              {report.defects.length === 0 ? (
+                <p className="defects-empty">Nenhum defeito registrado.</p>
+              ) : (
+                <ul className="defects-list">
+                  {report.defects.map((defect, idx) => (
+                    <li key={idx}>
+                      <strong>{defect.severity}:</strong> {defect.description}
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <h4>Métricas de Qualidade:</h4>
               <div className="quality-metrics">

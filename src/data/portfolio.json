@@ -1,10 +1,11 @@
 {
   "site": {
     "title": "QA Portfolio",
-    "description": "Portfolio de QA Engineer Sênior - Especialista em Garantia de Qualidade"
+    "description": "Modelo de portfólio para profissionais de QA (dados fictícios de demonstração)",
+    "demo": true
   },
   "profile": {
-    "name": "Fabio Silva",
+    "name": "Alex Exemplo",
     "role": "Senior QA Engineer",
     "headline": "Quality Assurance Specialist",
     "summary": "Especialista em Garantia de Qualidade com 8+ anos de experiência em testes automatizados, performance e segurança",
@@ -15,19 +16,19 @@
   },
   "contacts": [
     {
-      "label": "Instagram",
-      "icon": "bxl-instagram",
-      "url": "https://instagram.com"
-    },
-    {
       "label": "LinkedIn",
       "icon": "bxl-linkedin",
-      "url": "https://www.linkedin.com"
+      "url": "https://example.com/linkedin/alex-exemplo"
     },
     {
       "label": "GitHub",
       "icon": "bxl-github",
-      "url": "https://github.com"
+      "url": "https://example.com/github/alex-exemplo"
+    },
+    {
+      "label": "Instagram",
+      "icon": "bxl-instagram",
+      "url": "https://example.com/instagram/alex-exemplo"
     }
   ],
   "home": {

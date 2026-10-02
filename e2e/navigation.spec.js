@@ -21,3 +21,8 @@ test('001 AC-2: a direct route loads its page', async ({ page }) => {
   await page.goto('/about');
   await expect(page.getByRole('heading', { level: 1, name: 'Sobre Mim' })).toBeVisible();
 });
+
+test('003 AC-2: the demo notice is visible', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('note')).toContainText('Dados fictícios de demonstração');
+});
