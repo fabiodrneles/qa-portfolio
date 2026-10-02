@@ -30,6 +30,6 @@ Convenções: `MUST`/`SHOULD`/`MAY` seguem a RFC 2119. Prioridades: **P0** (bloq
 |---|---|---|---|
 | 001 | [Base reproduzível com Vite](001-quality-base/spec.md) | P0 | Done |
 | 002 | [Testes e esteira de qualidade](002-test-pipeline/spec.md) | P0 | Done |
-| 003 | [Conteúdo vindo de um arquivo de dados](003-data-driven-content/spec.md) | P1 | Approved |
+| 003 | [Conteúdo vindo de um arquivo de dados](003-data-driven-content/spec.md) | P1 | Done |
 
 Status possíveis: `Draft` → `Approved` → `In Progress` → `Done`.

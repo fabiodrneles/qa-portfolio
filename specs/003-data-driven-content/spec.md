@@ -1,7 +1,7 @@
 # 003 — Conteúdo vindo de um arquivo de dados
 
 - **Prioridade:** P1
-- **Status:** Approved — D1 respondida em 2026-10-02
+- **Status:** Done — entregue na `v0.3.0`
 - **Código afetado:** `src/data/`, componentes e páginas, `README.md`
 
 ## Contexto
